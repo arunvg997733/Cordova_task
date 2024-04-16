@@ -60,7 +60,9 @@ showDialogWidget(
     context: context,
     builder: (context) {
       return AlertDialog(
-        shape: LinearBorder.none,
+        shape: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10),
+            borderSide: BorderSide.none),
         title: textWidget(text: title, size: mediumFont),
         actions: [
           TextButton(
